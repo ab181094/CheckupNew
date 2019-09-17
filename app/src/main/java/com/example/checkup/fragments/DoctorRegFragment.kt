@@ -24,6 +24,10 @@ class DoctorRegFragment : Fragment() {
 
         initAll(rootView)
 
+        etName.setText("Sugata")
+        etContact.setText("0186767676")
+        etPassword.setText("Sugata")
+
         return rootView
     }
 

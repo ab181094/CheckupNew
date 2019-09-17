@@ -31,14 +31,18 @@ class DoctorRegActivity : AppCompatActivity(), ArrayResponse {
                 regNumberString = fragment.etReg.text.toString().trim()
                 validateDoctorRegNumber(this, regNumberString)
             } else if (fragment is DoctorRegFragment) {
-                nameString = fragment.etName.toString().trim()
-                contactString = fragment.etContact.toString().trim()
-                passwordString = fragment.etPassword.toString().trim()
+                nameString = fragment.etName.text.toString().trim()
+                contactString = fragment.etContact.text.toString().trim()
+                passwordString = fragment.etPassword.text.toString().trim()
 
                 when {
                     nameString.isEmpty() -> error(fragment.etName)
                     contactString.isEmpty() -> error(fragment.etContact)
                     passwordString.isEmpty() -> error(fragment.etPassword)
+                    passwordString.length < 6 -> {
+                        fragment.etPassword.error = "Password too short (min 6 characters)"
+                        fragment.etPassword.requestFocus()
+                    }
                     else -> {
                         val doctor = Doctor()
                         doctor.nameString = nameString
@@ -58,7 +62,7 @@ class DoctorRegActivity : AppCompatActivity(), ArrayResponse {
         if (responseList.containsKey(VERIFY_TAG)) {
             val response = responseList[VERIFY_TAG].toString()
 
-            if (response.toLowerCase() == "found") {
+            if (response == "Found") {
                 val fragment = DoctorRegFragment()
                 showFragment(this, fragment, R.id.container, DOCTOR_REG_TAG)
             } else {

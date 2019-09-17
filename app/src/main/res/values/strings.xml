@@ -10,4 +10,11 @@
     <string name="mobile_number">Mobile Number</string>
     <string name="password">Password</string>
     <string name="diagnostic_center_s_name">Diagnostic center\'s Name</string>
+    <string name="speciality">MBBS, FCPS (Medicine)</string>
+    <string name="rating_5_5">Rating: 5/5</string>
+    <string name="visiting_fee_500_bdt">Visiting Fee: 500 BDT</string>
+    <string name="search_title">Search</string>
+    <string name="title_activity_login">Login</string>
+    <string name="remember_me">Remember me</string>
+    <string name="contact">Contact</string>
 </resources>

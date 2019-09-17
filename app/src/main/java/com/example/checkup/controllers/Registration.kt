@@ -1,10 +1,8 @@
 package com.example.checkup.controllers
 
 import com.example.checkup.activities.DoctorRegActivity
-import com.example.checkup.helpers.DOCTOR_REG_API
-import com.example.checkup.helpers.DOCTOR_REG_TAG
-import com.example.checkup.helpers.DOCTOR_REG_VERIFICATION_API
-import com.example.checkup.helpers.VERIFY_TAG
+import com.example.checkup.activities.LoginActivity
+import com.example.checkup.helpers.*
 import com.example.checkup.models.Doctor
 
 fun validateDoctorRegNumber(doctorRegActivity: DoctorRegActivity, numberString: String) {
@@ -14,5 +12,15 @@ fun validateDoctorRegNumber(doctorRegActivity: DoctorRegActivity, numberString: 
 
 fun registerDoctor(doctorRegActivity: DoctorRegActivity, doctor: Doctor) {
     val url = DOCTOR_REG_API
-    postStringRequest(doctorRegActivity, url, doctor, DOCTOR_REG_TAG, DOCTOR_REG_TAG)
+    postDoctorStringRequest(doctorRegActivity, url, doctor, DOCTOR_REG_TAG, DOCTOR_REG_TAG)
+}
+
+fun login(loginActivity: LoginActivity, contactString: String, passwordString: String) {
+    val url = LOGIN_API
+
+    val map = HashMap<String, String>()
+    map["contact"] = contactString
+    map["password"] = passwordString
+
+    postStringRequest(loginActivity, url, map, LOGIN_TAG, LOGIN_TAG)
 }
