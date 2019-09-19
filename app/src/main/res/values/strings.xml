@@ -17,4 +17,18 @@
     <string name="title_activity_login">Login</string>
     <string name="remember_me">Remember me</string>
     <string name="contact">Contact</string>
+    <string name="icon_name">Icon Name</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_show_doctors">Doctors</string>
+    <string name="title_activity_show_diagnostics">Diagnostics</string>
+    <string name="title_activity_hospitals">Hospitals</string>
+    <string name="title_activity_contact">Contact</string>
+    <string name="title_activity_appointments">Appointments</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_history">History</string>
+    <string name="title_activity_tips">Tips</string>
+    <string name="title_activity_ambulances">Ambulances</string>
+    <string name="title_activity_blood_banks">Blood Banks</string>
+    <string name="property">Property</string>
+    <string name="value">Value</string>
 </resources>

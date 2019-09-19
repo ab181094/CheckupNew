@@ -10,7 +10,6 @@ import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import com.example.checkup.R
 import com.example.checkup.controllers.login
-import com.example.checkup.fragments.DoctorRegFragment
 import com.example.checkup.helpers.*
 import com.example.checkup.interfaces.ArrayResponse
 import com.example.checkup.models.Doctor
@@ -41,6 +40,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener, ArrayResponse {
         progressBar = findViewById(R.id.progressBar)
         btnLogin = findViewById(R.id.btnLogin)
 
+        chkRemember.isChecked = true
         hideProgressBar(progressBar)
 
         btnLogin.setOnClickListener(this)

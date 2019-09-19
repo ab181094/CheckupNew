@@ -10,13 +10,12 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.checkup.R
-import com.example.checkup.activities.DoctorRegActivity
-import com.example.checkup.fragments.DoctorRegFragment
 import com.example.checkup.fragments.NumberFragment
 
 fun showNumberFragment(activity: AppCompatActivity, layout: Int) {
     val fragment = NumberFragment()
-    activity.supportFragmentManager.beginTransaction().replace(R.id.container, fragment, REG_TAG).commit()
+    activity.supportFragmentManager.beginTransaction().replace(R.id.container, fragment, REG_TAG)
+        .commit()
 }
 
 fun log(message: Any) {
@@ -38,9 +37,9 @@ fun error(editText: EditText) {
 
 fun saveInfoLocally(activity: Activity, hashMap: LinkedHashMap<String, Any>) {
     val sharedPref = activity.getPreferences(Context.MODE_PRIVATE) ?: return
-    with (sharedPref.edit()) {
+    with(sharedPref.edit()) {
         for (entry in hashMap.entries) {
-            when(entry.value) {
+            when (entry.value) {
                 is String -> {
                     putString(entry.key, entry.value.toString())
                 }

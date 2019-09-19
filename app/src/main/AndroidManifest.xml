@@ -18,6 +18,50 @@
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
         <activity
+                android:name=".activities.BloodBanksActivity"
+                android:label="@string/title_activity_blood_banks"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+                android:name=".activities.AmbulancesActivity"
+                android:label="@string/title_activity_ambulances"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".activities.TipsActivity"
+                android:label="@string/title_activity_tips"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".activities.HistoryActivity"
+                android:label="@string/title_activity_history"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".activities.ProfileActivity"
+                android:label="@string/title_activity_profile"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".activities.AppointmentsActivity"
+                android:label="@string/title_activity_appointments"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".activities.ContactActivity"
+                android:label="@string/title_activity_contact"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".activities.HospitalsActivity"
+                android:label="@string/title_activity_hospitals"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".activities.ShowDiagnosticsActivity"
+                android:label="@string/title_activity_show_diagnostics"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".activities.ShowDoctorsActivity"
+                android:label="@string/title_activity_show_doctors"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".activities.HomeActivity"
+                android:label="@string/title_activity_home"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
                 android:name=".activities.LoginActivity"
                 android:label="@string/title_activity_login"
                 android:theme="@style/AppTheme.NoActionBar" />

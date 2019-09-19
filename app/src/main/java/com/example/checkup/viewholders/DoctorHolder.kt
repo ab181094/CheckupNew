@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.checkup.R
 
 class DoctorHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    val imageView = itemView.findViewById<ImageView>(R.id.imageView)
+    val imageViewDoctor = itemView.findViewById<ImageView>(R.id.imageViewDoctor)
     val tvName = itemView.findViewById<TextView>(R.id.tvName)
     val tvSpeciality = itemView.findViewById<TextView>(R.id.tvSpeciality)
     val tvRating = itemView.findViewById<TextView>(R.id.tvRating)
