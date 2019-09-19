@@ -31,4 +31,37 @@
     <string name="title_activity_blood_banks">Blood Banks</string>
     <string name="property">Property</string>
     <string name="value">Value</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="quote">Quote</string>
+
+    <string-array name="quote_array">
+        <item>Sugary drinks are among the most fattening items you can put into your body.</item>
+        <item>Despite being high in fat, nuts are incredibly nutritious and healthy.</item>
+        <item>Processed junk food is incredibly unhealthy.</item>
+        <item>Coffee is very healthy.</item>
+        <item>Fish is a great source of high-quality protein and healthy fat.</item>
+        <item>The importance of getting enough quality sleep cannot be overstated.</item>
+        <item>Good ways to improve gut health include eating probiotic foods like yogurt and sauerkraut.</item>
+        <item>The optimal time to drink it is before meals.</item>
+        <item>When you cook meat, make sure not to overcook or burn it.</item>
+        <item>Avoid bright lights before sleep.</item>
+        <item>Take vitamin D3 if you don’t get much sun exposure.</item>
+        <item>People who eat the most vegetables and fruits live longer and have a lower risk of heart disease.</item>
+        <item>Sufficient protein intake has also been shown to lower blood sugar and blood pressure levels.</item>
+        <item>Doing aerobic exercise, also called cardio, is one of the best things you can do for your mental and physical health.</item>
+        <item>Don’t smoke or do drugs, and only drink in moderation.</item>
+        <item>Extra virgin olive oil is one of the healthiest vegetable oils.</item>
+        <item>Added sugar is one of the worst ingredients in the modern diet, as large amounts can harm your metabolic health.</item>
+        <item>Refined carbs are linked to overeating and numerous metabolic diseases.</item>
+        <item>Lifting weights is one of the best things you can do to strengthen your muscles and improve your body composition.</item>
+        <item>Artificial trans fats are harmful, man-made fats that are strongly linked to inflammation and heart disease.</item>
+        <item>Due to their powerful benefits, you should try to include as many herbs and spices as possible in your diet.</item>
+        <item>Social relationships are incredibly important not only for your mental well-being but also your physical health.</item>
+        <item>The only way to know exactly how many calories you eat is to weigh your food and use a nutrition tracker.</item>
+        <item>If you have excess belly fat, get rid of it.</item>
+        <item>Diets are notoriously ineffective and rarely work well in the long term.</item>
+        <item>Whole eggs are so nutritious that they’re often termed “nature’s multivitamin.”</item>
+    </string-array>
 </resources>
