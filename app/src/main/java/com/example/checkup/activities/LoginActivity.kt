@@ -3,10 +3,8 @@ package com.example.checkup.activities
 import android.content.Context
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.EditText
-import android.widget.ProgressBar
+import android.widget.*
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.checkup.R
 import com.example.checkup.controllers.login
@@ -23,6 +21,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener, ArrayResponse {
     private lateinit var chkRemember: CheckBox
     private lateinit var progressBar: ProgressBar
     private lateinit var btnLogin: Button
+    private lateinit var tvRegister: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,11 +38,13 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener, ArrayResponse {
         chkRemember = findViewById(R.id.chkRemember)
         progressBar = findViewById(R.id.progressBar)
         btnLogin = findViewById(R.id.btnLogin)
+        tvRegister = findViewById(R.id.tvRegister)
 
         chkRemember.isChecked = true
         hideProgressBar(progressBar)
 
         btnLogin.setOnClickListener(this)
+        tvRegister.setOnClickListener(this)
     }
 
     override fun onClick(p0: View?) {
@@ -69,7 +70,22 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener, ArrayResponse {
                 showProgressBar(progressBar)
                 login(this, contactString, passwordString)
             }
+
+            tvRegister.id -> {
+                showRegistrationDialog()
+            }
         }
+    }
+
+    private fun showRegistrationDialog() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle(R.string.pick_user)
+            .setItems(
+                R.array.user_types
+            ) { dialog, which ->
+                log(which)
+            }
+        builder.create()
     }
 
     private fun loadLocalData() {

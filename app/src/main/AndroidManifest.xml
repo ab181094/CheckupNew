@@ -18,9 +18,13 @@
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
         <activity
+                android:name=".activities.AlertActivity"
+                android:label="@string/title_activity_alert"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
                 android:name=".activities.BloodBanksActivity"
                 android:label="@string/title_activity_blood_banks"
-                android:theme="@style/AppTheme.NoActionBar"></activity>
+                android:theme="@style/AppTheme.NoActionBar" />
         <activity
                 android:name=".activities.AmbulancesActivity"
                 android:label="@string/title_activity_ambulances"

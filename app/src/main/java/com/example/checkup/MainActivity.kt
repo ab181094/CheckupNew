@@ -6,6 +6,7 @@ import android.os.Handler
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.checkup.activities.HomeActivity
+import com.example.checkup.activities.LoginActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         tvQuote.text = quoteString
 
         Handler().postDelayed({
-            val intent = Intent(this@MainActivity, HomeActivity::class.java)
+            val intent = Intent(this@MainActivity, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }, 1500)

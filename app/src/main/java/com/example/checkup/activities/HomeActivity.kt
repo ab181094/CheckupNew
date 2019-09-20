@@ -38,6 +38,7 @@ class HomeActivity : AppCompatActivity() {
         createIcon("History", R.drawable.ic_report)
         createIcon("Profile", R.drawable.ic_user)
         createIcon("Appointments", R.drawable.ic_calendar)
+        createIcon("Alerts", R.drawable.ic_alarm)
         createIcon("Contact Us", R.drawable.ic_phone)
         createIcon("Sign Out", R.drawable.ic_logout)
     }
@@ -101,6 +102,11 @@ class HomeActivity : AppCompatActivity() {
 
             "Appointments" -> {
                 val intent = Intent(this, AppointmentsActivity::class.java)
+                startActivity(intent)
+            }
+
+            "Alerts" -> {
+                val intent = Intent(this, AlertActivity::class.java)
                 startActivity(intent)
             }
 

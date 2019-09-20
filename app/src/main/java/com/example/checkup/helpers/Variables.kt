@@ -9,6 +9,7 @@ const val VERIFY_TAG = "onVerify"
 const val LOGIN_TAG = "onLogin"
 const val PROFILE_TAG = "onProfile"
 const val REPORT_TAG = "onReport"
+const val TIPS_TAG = "onTips"
 
 const val ERROR_FIELD = "Fill this field"
 
